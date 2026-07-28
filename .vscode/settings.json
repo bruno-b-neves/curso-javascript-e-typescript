@@ -1,67 +1,106 @@
 {
-    "editor.fontFamily": "FiraCode Nerd Font, Fira Code, monospace",
-    "editor.fontSize": 18,
-    "editor.lineHeight": 1.5,
-    "editor.fontLigatures": false,
-    "editor.formatOnSave": true,
-    // --- Code Runner Config ---
-    "code-runner.runInTerminal": true,
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.saveAllFilesBeforeRun": false,
-    "code-runner.executorMap": {
-        "javascript": "node",
-        // "typescript": "ts-node",
+  "editor.fontFamily": "FiraCode Nerd Font, Fira Code, monospace",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 1.5,
+  "editor.fontLigatures": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.prettier": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  // --- Prettier - Code Formatter Config ---
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": false,
+  "prettier.singleQuote": false,
+  "prettier.semi": true,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+  // --- Code Runner Config ---
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveAllFilesBeforeRun": false,
+  "code-runner.executorMap": {
+    "javascript": "node"
+    // "typescript": "ts-node",
+  },
+  // --- Config Languages Code ---
+  "js/ts.format.semicolons": "insert",
+  // Extesion Auto Rename
+  "auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"],
+  // Extesion Auto Close Tag
+  "auto-close-tag.enableAutoCloseTag": true,
+  "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ],
+  // --- Config Better Comments ---
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": false,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    // --- Config JavaScript Code ---
-    "js/ts.format.semicolons": "insert",
-    // --- Config Better Comments ---
-    "better-comments.multilineComments": true,
-    "better-comments.highlightPlainText": false,
-    "better-comments.tags": [
-        {
-            "tag": "!",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "?",
-            "color": "#3498DB",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "//",
-            "color": "#474747",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        }
-    ]
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ]
 }
