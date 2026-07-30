@@ -54,26 +54,3 @@ console.log("Variável: num7", num7.toExponential(2));
 let contador = 1;
 contador++;
 console.log(contador);
-
-contador--;
-console.log(contador);
-
-// NaN - Not a Number
-const num8 = 10;
-const num9 = "Bruno";
-console.log(num8 * num9); // NaN
-
-// parseInt(inteiro) - Converte uma string em um número inteiro.
-const num10 = 10;
-const num11 = parseInt("5");
-console.log(num10 + num11);
-
-// parseFloat(decimais) - Converte uma string em um número de ponto flutuante
-const num12 = 10;
-const num13 = parseFloat("5.2");
-console.log(num12 + num13);
-
-// Number() - Um objeto que representa um número de qualquer tipo. Todos os números em JavaScript são números de ponto flutuante de 64 bits.
-const num14 = 10;
-const num15 = Number("5");
-console.log(num14 + num15);
