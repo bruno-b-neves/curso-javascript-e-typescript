@@ -4,21 +4,21 @@
     "editor.lineHeight": 1.5,
     "editor.fontLigatures": false,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.prettier": "explicit",
-        "source.fixAll.eslint": "explicit"
-    },
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.prettier": "explicit",
+    //     "source.fixAll.eslint": "explicit"
+    // },
     // --- Prettier - Code Formatter Config ---
-    "prettier.printWidth": 120,
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": false,
-    "prettier.singleQuote": false,
-    "prettier.semi": true,
-    "prettier.trailingComma": "all",
-    "prettier.bracketSpacing": true,
-    "prettier.arrowParens": "always",
-    "prettier.endOfLine": "lf",
+    // "prettier.printWidth": 120,
+    // "prettier.tabWidth": 4,
+    // "prettier.useTabs": false,
+    // "prettier.singleQuote": false,
+    // "prettier.semi": true,
+    // "prettier.trailingComma": "all",
+    // "prettier.bracketSpacing": true,
+    // "prettier.arrowParens": "always",
+    // "prettier.endOfLine": "lf",
     // --- Code Runner Config ---
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
