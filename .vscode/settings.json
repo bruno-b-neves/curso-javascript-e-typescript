@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "FiraCode Nerd Font, Fira Code, monospace",
-    "editor.fontSize": 18,
+    "editor.fontSize": 14,
     "editor.lineHeight": 1.5,
     "editor.fontLigatures": false,
     "editor.formatOnSave": true,
@@ -23,36 +23,12 @@
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveAllFilesBeforeRun": false,
-    "code-runner.executorMap": {
-        "javascript": "node"
-        // "typescript": "ts-node",
-    },
+    // "code-runner.executorMap": {
+    //     "javascript": "node"
+    //     // "typescript": "ts-node",
+    // },
     // --- Config Languages Code ---
     "js/ts.format.semicolons": "insert",
-    // Extesion Auto Rename
-    "auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"],
-    // Extesion Auto Close Tag
-    "auto-close-tag.enableAutoCloseTag": true,
-    "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
-    "auto-close-tag.activationOnLanguage": [
-        "xml",
-        "php",
-        "blade",
-        "ejs",
-        "jinja",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "plaintext",
-        "markdown",
-        "vue",
-        "liquid",
-        "erb",
-        "lang-cfml",
-        "cfml",
-        "HTML (Eex)"
-    ],
     // --- Config Better Comments ---
     "better-comments.multilineComments": true,
     "better-comments.highlightPlainText": false,
@@ -102,5 +78,18 @@
             "bold": false,
             "italic": false
         }
-    ]
+    ],
+    "standard.validate": [
+        "javascript",
+        "javascriptreact",
+        "html"
+    ],
+    "standard.options": {
+        "plugins": [
+            "html"
+        ]
+    },
+    "files.associations": {
+        "*.vue": "html"
+    },
 }
