@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --font-sans: 'Open sans';
+    --font-size-default: 1.3em;
+    --font-weight-default: 500;
+
+    --white: #fff;
+    --neutral-50: oklch(98.5% 0 none);
+    --neutral-100: oklch(97% 0 none);
+    --neutral-300: oklch(86.9% 0.005 56.366);
+    --neutral-800: oklch(26.9% 0 none);
+
+    --blue-500: oklch(62.3% 0.214 259.815);
+
+    /* Abaixo do peso: Sky (Azul Claro) */
+    --tw-sky-200: #bae6fd;
+    --tw-sky-800: #075985;
+
+    /* Peso Normal: Emerald ou Green (Verde) */
+    --tw-emerald-200: #a7f3d0;
+    --tw-emerald-900: #064e3b;
+
+    /* Sobrepeso: Amber (Amarelo/Ouro) */
+    --tw-amber-200: #fde68a;
+    --tw-amber-900: #78350f;
+
+    /* Obesidade Grau 1: Orange (Laranja) */
+    --tw-orange-200: #fed7aa;
+    --tw-orange-900: #7c2d12;
+
+    /* Obesidade Grau 2: Red (Vermelho) */
+    --tw-red-200: #fecaca;
+    --tw-red-900: #7f1d1d;
+
+    /* Obesidade Grau 3: Fuchsia ou Purple (Roxo) */
+    --tw-fuchsia-200: #f5d0fe;
+    --tw-fuchsia-900: #701a75;
+
+    /* Entradas Inválidas: Slate (Cinza Neutro) */
+    --tw-slate-200: #e2e8f0;
+    --tw-slate-900: #0f172a;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-default);
+    color: var(--neutral-800);
+    background-color: var(--neutral-100);
+    font-family: var(--font-sans), sans-serif;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 20px auto;
+    background-color: var(--white);
+    border: 1px solid var(--neutral-300);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px var(--neutral-300);
+}
+
+form {
+    margin-top: 30px;
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 1em;
+    height: 42px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-300);
+}
+
+form input:focus {
+    outline: 1px solid var(--blue-500);
+    box-shadow: 1px -0px 6px var(--blue-500);
+    border: 1px solid var(--blue-500);
+    transition: all 0.1s ease-in-out;
+}
+
+form button {
+    border: 0;
+    background-color: var(--blue-500);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* --- Base comum para os parágrafos de resultado --- */
+.paragrafo-resultado, .bad, 
+.abaixo-peso, .peso-normal, .sobrepeso, .obesidade-1, .obesidade-2, .obesidade-3 {
+    border-radius: 8px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+/* --- ABAIXO DO PESO: Usando a escala 'sky' do Tailwind --- */
+.abaixo-peso {
+    background-color: oklch(95.1% 0.026 236.824); /* sky-100 */
+    border-color: oklch(82.8% 0.111 230.318);     /* sky-300 */
+    color: oklch(44.3% 0.11 240.79);              /* sky-800 */
+}
+
+/* --- PESO NORMAL: O seu código original usando a escala 'green' --- */
+.peso-normal {
+    background-color: oklch(96.2% 0.044 156.743); /* green-100 */
+    border-color: oklch(87.1% 0.15 154.449);     /* green-300 */
+    color: oklch(44.8% 0.119 151.328);            /* green-800 */
+}
+
+/* --- SOBREPESO: Usando a escala 'amber' (Amarelo/Ouro) --- */
+.sobrepeso {
+    background-color: oklch(96.2% 0.059 95.617); /* amber-100 */
+    border-color: oklch(87.9% 0.169 91.605);     /* amber-300 */
+    color: oklch(47.3% 0.137 46.201);            /* amber-800 */
+}
+
+/* --- OBESIDADE GRAU 1: Usando a escala 'orange' --- */
+.obesidade-1 {
+    background-color: oklch(95.4% 0.038 75.164); /* orange-100 */
+    border-color: oklch(83.7% 0.128 66.29);      /* orange-300 */
+    color: oklch(47% 0.157 37.304);              /* orange-800 */
+}
+
+/* --- OBESIDADE GRAU 2: Usando a escala 'red' --- */
+.obesidade-2 {
+    background-color: oklch(93.6% 0.032 17.717); /* red-100 */
+    border-color: oklch(80.8% 0.114 19.571);     /* red-300 */
+    color: oklch(44.4% 0.177 26.899);            /* red-800 */
+}
+
+/* --- OBESIDADE GRAU 3: Usando a escala 'purple' (Roxo) --- */
+.obesidade-3 {
+    background-color: oklch(94.6% 0.033 307.174); /* purple-100 */
+    border-color: oklch(82.7% 0.119 306.383);     /* purple-300 */
+    color: oklch(43.8% 0.218 303.724);            /* purple-800 */
+}
+
+/* --- ERRO / INPUTS INVÁLIDOS: O seu código original usando a escala 'rose' --- */
+.bad {
+    background-color: oklch(89.2% 0.058 10.001); /* rose-200 (levemente mais escuro) */
+    border-color: oklch(71.2% 0.194 13.428);     /* rose-400 */
+    color: oklch(45.5% 0.188 13.697);            /* rose-800 */
+}
