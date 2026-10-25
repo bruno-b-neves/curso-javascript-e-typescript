@@ -1,6 +1,9 @@
-// ? : (são operadores ternários)
+// * (condição)  ? 'valor verdadeiro' : 'valor falso'
 
 const pontuacao = 1000;
 const nivel = pontuacao >= 1000 ? 'Usuário VIP' : 'Usuário normal';
 
-console.log(nivel)
+const corUsuario = null;
+const corPadrao = corUsuario || 'Preta'
+
+console.log(nivel, corPadrao)
