@@ -20,13 +20,10 @@
     // "prettier.arrowParens": "always",
     // "prettier.endOfLine": "lf",
     // --- Code Runner Config ---
-    "code-runner.runInTerminal": true,
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.saveAllFilesBeforeRun": false,
-    // "code-runner.executorMap": {
-    //     "javascript": "node"
-    //     // "typescript": "ts-node",
-    // },
+    "code-runner.executorMap": {
+        "javascript": "node"
+        // "typescript": "ts-node",
+    },
     // --- Config Languages Code ---
     "js/ts.format.semicolons": "insert",
     // --- Config Better Comments ---
